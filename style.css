@@ -1,0 +1,741 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #EC715F;
+  }
+  
+.header-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-burger {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5%;
+  border: 1px solid white;
+}
+
+.icon, .icon:before, .icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px; /*線の太さ*/
+    width: 25px; /*線の長さ*/
+    border-radius: 2px;
+    background-color: white;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+}
+
+.icon:before {
+  top: 10px;
+}
+.icon:after {
+  top: -10px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ .btn-burger .icon {
+    background: transparent;
+}
+
+.nav-toggle:checked ~ .btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.nav-toggle:checked ~ .btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.icon,
+.icon:before,
+.icon:after {
+    transition: all .8s;
+}
+
+.nav-list a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-toggle:checked ~ .nav .nav-list {
+    display: block;
+}
+
+.top {
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: #f0f8ff;
+}
+
+.main-visual {
+  background-image: url(img/mv.png);
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.main-visual-title {
+  font-size: 64px;
+  color: #FAFAFA;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-visual-subtitle {
+  font-size: 20px;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+#portfolio {
+  background-color: #ECEFF1;
+  width: 100%;
+  padding: 90px 0;
+}
+
+.portfolio-title {
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.portfolio-border {
+  margin: 8px auto 30px ;
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+}
+
+.portfolio-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0 auto; 
+}
+
+.portfolio-item1 {
+  background-image: url(img/sketch.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 10px 10px 0;
+}
+
+.portfolio-item2 {
+  background-image: url(img/websuku.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 10px 10px 0;
+}
+
+.portfolio-item3 {
+  background-image: url(img/write.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 0 10px 0;
+}
+
+.portfolio-item4 {
+  background-image: url(img/webcamp.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 10px 0 0;
+}
+
+.portfolio-item5 {
+  background-image: url(img/talk.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 10px 0 0;
+}
+
+.portfolio-item6 {
+  background-image: url(img/webcamp-mother.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+}
+
+#Feature {
+  padding: 90px 0;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.Feature-title {
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.Feature-border {
+  margin: 8px auto 30px ;
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+}
+
+.Feature-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.Feature-list {
+  display: flex;
+}
+
+.Feature-item1 {
+  margin-right: 10px;
+  width: 320px;
+}
+
+.Feature-item-logo1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.Feature-item-title1 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+}
+
+.Feature-item-text1 {
+  font-size: 16px;
+  color: #000;
+}
+
+.Feature-item2 {
+  margin-right: 10px;
+  width: 320px;
+}
+
+.Feature-item-logo2 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.Feature-item-title2 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+}
+
+.Feature-item-text2 {
+  font-size: 16px;
+  color: #000;
+}
+
+.Feature-item3 {
+  margin-right: 10px;
+  width: 320px;
+}
+
+.Feature-item-logo3 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.Feature-item-title3 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+}
+
+.Feature-item-text3 {
+  font-size: 16px;
+  color: #000;
+}
+
+#profile {
+  background-color: #ECEFF1;
+  width: 100%;
+  padding: 90px 0;
+}
+
+.profile-title {
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.profile-border {
+  margin: 8px auto 30px ;
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+}
+
+.profile-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.profile-list {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.profile-icon {
+  width: 512px;
+  text-align: center;
+}
+
+.profile-icon-custom {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  width: 512px;
+}
+
+.profile-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-information {
+  margin-bottom: 20px;
+}
+
+.profile-information2 {
+  margin-bottom: 20px;
+}
+
+#contact {
+  padding: 90px 0;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.contact-border {
+  margin: 8px auto 30px ;
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  margin: 0 auto;
+  display: flex;
+}
+
+.contact-info {
+  width: 400px;
+  margin-left: 170px;
+}
+
+.contact-info-item {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-info-mail {
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  width: 400px;
+  margin-left: 30px;
+}
+
+.contact-icon-list {
+  display: flex;
+}
+
+.contact-icon-item1 {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.contact-icon-item2 {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.contact-icon-item3 {
+  font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-align: center;
+  line-height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-burger {
+    display: none;  /*768px以上では使用しない */
+}
+
+  header {
+  height: 70px;
+  width: 100%;
+  background-color: #EC715F;
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-logo {
+  margin-right: auto;
+  height: 70px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.nav-list {
+  margin-left: auto;
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  padding-top: 0;
+}
+
+.nav-item {
+  margin: auto 30px;
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+.nav {
+  line-height: 70px;
+}
+
+
+}
+
+@media screen and (max-width:767px) {
+  header{
+    width: 100%;
+    height: 50px;
+  }
+  
+  nav {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  margin-right: auto;
+  height: 50px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.main-visual {
+  background-image: url(img/code.png);
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.main-visual-title {
+  font-size: 40px;
+  color: #FAFAFA;
+  text-align: center;
+  margin: 0 auto 10px;
+  width: 90%;
+}
+
+.main-visual-subtitle {
+  font-size: 18px;
+  color: #FAFAFA;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  color: #000;
+  margin: 0 auto 30px;
+  width: 90%;
+}
+
+.portfolio-list {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-item1 {
+  background-image: url(img/websuku.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 auto 10px;
+}
+
+.portfolio-item2 {
+  background-image: url(img/webcamp.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 auto 10px;
+}
+
+.portfolio-item3 {
+  background-image: url(img/webcamp-mother.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.portfolio-item4 {
+  display: none;
+}
+
+.portfolio-item5 {
+  display: none;
+}
+
+.portfolio-item6 {
+  display: none;
+}
+
+#Feature {
+  padding: 90px 0;
+  width: 100%;
+}
+
+.Feature-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin: 0 auto 30px;
+  width: 90%;
+}
+
+.Feature-list {
+  display: block;
+}
+
+.Feature-item1 {
+  margin: 0 auto 10px;
+  width: 90%;
+}
+
+.Feature-item2 {
+  margin-bottom: 10px;
+}
+
+.Feature-item3 {
+  margin-bottom: 10px;
+}
+
+.profile-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin: 0 auto 30px;
+  width: 90%;
+}
+
+.profile-list {
+  display: block;
+  width: 100%;
+}
+
+.profile-icon {
+  margin: 0 auto 20px;
+  width: 90%;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-name {
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 5px;
+  
+}
+
+.profile-information {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.profile-information2 {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#contact {
+  padding: 90px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin: 0 auto 30px;
+  width: 90%;
+}
+
+.contact-list {
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-info {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.contact-info-item {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.contact-info-mail {
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact-info-number {
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact-icon {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-icon-list {
+  display: block;
+  text-align: center;
+}
+
+.contact-icon-item1 {
+  display: inline;
+  font-size: 50px;
+  margin: 0;
+}
+
+.contact-icon-item2 {
+  display: inline;
+  font-size: 50px;
+  margin: 0 8px;
+}
+
+.contact-icon-item3 {
+  display: inline;
+  font-size: 50px;
+  margin: 0;
+}
+
+}
