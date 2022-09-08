@@ -101,7 +101,7 @@ header{
     background-color: #f0f8ff;
 }
 
-.main-visual {
+#main-visual {
   background-image: url(img/mv.png);
   background-position: center;
   background-size: cover;
@@ -518,7 +518,7 @@ footer {
   height: 100%;
 }
 
-.main-visual {
+#main-visual {
   background-image: url(img/code.png);
   background-position: center;
   background-size: cover;
